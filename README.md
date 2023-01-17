@@ -6,10 +6,10 @@ This web app allows a user to filter workouts using a search and dropdown menus.
 Each workout has details about difficulty, muscle, type, and instructions.  
 
 ## Technologies 
-MongoDB
-ExpressJS
-ReactJS
-NodeJS
+MongoDB,
+ExpressJS,
+ReactJS,
+NodeJS,
 
 ## Setup
 To run this project, install it locally using npm:
