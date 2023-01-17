@@ -15,7 +15,9 @@ NodeJS
 To run this project, install it locally using npm:
 
 ```
-$ cd ../workout-webapp
+$ cd ../workout-react
 $ npm install
 $ npm start
 ```
+
+<img width="930" alt="Screen Shot 2023-01-16 at 10 10 56 PM" src="https://user-images.githubusercontent.com/77868811/212822819-9de01c61-006a-45b9-b719-ec618fad9513.png">
