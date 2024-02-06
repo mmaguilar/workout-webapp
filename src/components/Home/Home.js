@@ -128,9 +128,7 @@ class Home extends Component{
     }
 
     componentDidMount(){
-        const url = "http://localhost:5000/workout-webapp/workouts";
-
-        fetch(url)
+        fetch("/workout-webapp/workouts")
         .then(response => response.json())
         .then(data => {
             this.setState({
@@ -146,11 +144,9 @@ class Home extends Component{
     render(){
         return(
             <div className="home">
-                <div className="header">
-                    <div className="logo">
-                        Workout World
-                        <p>Where movement means more.</p>
-                    </div>
+                <div className="logo">
+                    Workout World
+                    <p>Where movement means more.</p>
                 </div>
             <div className="background">
             <div className="body">

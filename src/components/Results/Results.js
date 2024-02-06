@@ -84,35 +84,35 @@ class Results extends Component{
          //ALL DROPDOWNS are full 
         if(!(this.state.type==="Type") && !(this.state.muscle === "Muscle") && !(this.state.difficulty === "Difficulty")){
             //console.log("all dd are full");
-            url = (`http://localhost:5000/workout-webapp/search/all?type=${this.state.type}&muscle=${this.state.muscle}&difficulty=${this.state.difficulty}`);
+            url = (`/workout-webapp/search/all?type=${this.state.type}&muscle=${this.state.muscle}&difficulty=${this.state.difficulty}`);
         //ALL DROPDOWNs are empty
         }else if((this.state.type==="Type") && (this.state.muscle === "Muscle") && (this.state.difficulty === "Difficulty")){
             //console.log("all dd are empty");
-            url = (`http://localhost:5000/workout-webapp/workouts`);
+            url = (`/workout-webapp/workouts`);
         //TYPE and MUSC are full 
         }else if(!(this.state.type==="Type") && !(this.state.muscle === "Muscle") && (this.state.difficulty === "Difficulty")){
             //console.log("type and muscle are full");
-            url = (`http://localhost:5000/workout-webapp/search/typeandmuscle?type=${this.state.type}&muscle=${this.state.muscle}`);
+            url = (`/workout-webapp/search/typeandmuscle?type=${this.state.type}&muscle=${this.state.muscle}`);
         //TYPE and DIFF are full 
         }else if(!(this.state.type==="Type") && (this.state.muscle === "Muscle") && !(this.state.difficulty === "Difficulty")){
             //console.log("type and diff are full");
-            url = (`http://localhost:5000/workout-webapp/search/typeanddifficulty?type=${this.state.type}&difficulty=${this.state.difficulty}`);
+            url = (`/workout-webapp/search/typeanddifficulty?type=${this.state.type}&difficulty=${this.state.difficulty}`);
         //MUSC and DIFF are full
         }else if((this.state.type==="Type") && !(this.state.muscle === "Muscle") && !(this.state.difficulty === "Difficulty")){
             //console.log("muscle and diff are full");
-            url = (`http://localhost:5000/workout-webapp/search/muscleanddifficulty?muscle=${this.state.muscle}&difficulty=${this.state.difficulty}`)
+            url = (`/workout-webapp/search/muscleanddifficulty?muscle=${this.state.muscle}&difficulty=${this.state.difficulty}`)
         //MUSC is full 
         }else if((this.state.type==="Type") && !(this.state.muscle === "Muscle") && (this.state.difficulty === "Difficulty")){
             //console.log("muscle is full");
-            url = (`http://localhost:5000/workout-webapp/search/muscle/${this.state.muscle}`);
+            url = (`/workout-webapp/search/muscle/${this.state.muscle}`);
         //TYPE is full
         }else if(!(this.state.type==="Type") && (this.state.muscle === "Muscle") && (this.state.difficulty === "Difficulty")){
             //console.log("type is full");
-            url = (`http://localhost:5000/workout-webapp/search/type/${this.state.type}`);
+            url = (`/workout-webapp/search/type/${this.state.type}`);
         //DIFF is full
         }else if((this.state.type==="Type") && (this.state.muscle === "Muscle") && !(this.state.difficulty === "Difficulty")){
             //console.log("diff is full");
-            url = (`http://localhost:5000/workout-webapp/search/difficulty/${this.state.difficulty}`);
+            url = (`/workout-webapp/search/difficulty/${this.state.difficulty}`);
         }
         /**
          * fetch the data using the corresponding url
